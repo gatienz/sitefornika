@@ -20,6 +20,8 @@ let count = 0;
 let yesScale = 1;
 
 function moveNoButton() {
+  noBtn.style.position = "fixed";
+
   const maxX = window.innerWidth - noBtn.offsetWidth;
   const maxY = window.innerHeight - noBtn.offsetHeight;
 
@@ -28,13 +30,12 @@ function moveNoButton() {
 
   noBtn.style.left = `${randomX}px`;
   noBtn.style.top = `${randomY}px`;
-  noBtn.style.transform = "none";
 
   message.textContent = messages[count % messages.length];
 
   count++;
 
-  yesScale += 0.12;
+  yesScale += 0.15;
   yesBtn.style.transform = `scale(${yesScale})`;
 }
 
