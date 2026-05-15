@@ -77,6 +77,10 @@ button {
   font-size: 1.2rem;
   padding: 16px 36px;
   position: absolute;
+
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .success-screen {
