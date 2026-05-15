@@ -45,5 +45,10 @@ noBtn.addEventListener("touchstart", moveNoButton);
 
 yesBtn.addEventListener("click", () => {
   document.body.style.background = "#ffd1e8";
+
+  document.querySelector(".buttons").style.display = "none";
+  document.querySelector(".question").style.display = "none";
+  message.style.display = "none";
+
   successScreen.classList.add("show");
 });
